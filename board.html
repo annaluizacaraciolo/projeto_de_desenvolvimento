@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="board.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-menu">
+        <img src="logo completa sem fundo.png" width="190px" height="auto">
+        <p><i class="arrow down"></i></p>
+    </div>
+    
+    <div class="board">
+        <div class="secao">
+            <p>Notificações</p>
+            <hr width="1" size="470"/>
+        </div>
+        <div class="secao">
+            <p>Em andamento</p>
+            <hr width="1" size="470"/>
+        </div>
+        <div class="secao">
+            <p>Resolvidos</p>
+        </div>
+    </div>
+
+    <section class="modal hidden">
+        <div class="flex">
+            <div class="speech">
+                <div>
+                    <p><span><img src="sino-laranja png.png"></span> DeskConnect </p>
+                </div>
+                <p>Reconhecimento de voz</p>
+                <textarea id="texto"></textarea>
+                <div>
+                    <button id="btnGravar"><i class="fas fa-microphone"></i></button>
+                    <button id="btnParar"><i class="fas fa-microphone-slash"></i></button>
+                </div>
+            </div>
+            <script src="speech.js"></script>
+            <button class="btn-close">⨉</button>
+        </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <button class="adicionar">+</button>
+</body>
