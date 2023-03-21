@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="top-menu">
@@ -18,14 +19,12 @@
     <div class="board">
         <div class="secao">
             <p>Notificações</p>
-             <button class="adicionar">+</button>
-            <hr width="1" size="800"/>
+             <button class="adicionar"><span class="material-icons">add</span></button>
         </div>
         <div class="secao">
             <p>Em andamento</p>
-            <hr width="1" size="800"/>
         </div>
-        <div class="secao">
+        <div class="secao" id="terceiro-quadrante">
             <p>Resolvidos</p>
         </div>
     </div>
@@ -33,15 +32,15 @@
     <section class="modal">
         <div class="modal-content">
             <div class="speech">
+                <button id="fechar"><span class="material-icons">close</span></button>
                 <p class="texto-modal">Reconhecimento de voz</p>
                 <textarea id="texto"></textarea>
                 <div>
-                    <button id="btnGravar"><i class="fas fa-microphone"></i></button>
-                    <button id="btnParar"><i class="fas fa-microphone-slash"></i></button>
+                    <button id="btnGravar"><span class="material-icons"> mic </span></button>
+                    <button id="btnParar"><span class="material-icons"> mic_off </span></button>
                 </div>
             </div>
             <script src="speech.js"></script>
-            <button class="close-button">⨉</button>
         </div>
         <script src="board.js"></script>
     </section>
