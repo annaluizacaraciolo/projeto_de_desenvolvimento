@@ -12,7 +12,7 @@ img {
 
 .secao {
     width: 40%;
-    height: 500px;
+    height: 90vh;
     padding: 4px;
     position: relative;
 }
@@ -50,12 +50,101 @@ hr {
 
 .arrow {
     border: #FF7A00;
-    
+
     display: inline-block;
-    padding: 3px;  
+    padding: 3px;
 }
 
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgray;
+    width: 50rem;
+    height: 50rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Proza Libre', sans-serif;
+}
+.speech {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.texto-modal {
+    color: #FF7A00;
+    font-size: 3rem;
+}
+
+#texto {
+    width: 70%;
+    height: 50%;
+    margin: 50px auto;
+    padding: 1rem;
+}
+
+.fas {
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    min-width: 40px;
+}
+
+button { 
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    background-color: #FF7A00;
 }

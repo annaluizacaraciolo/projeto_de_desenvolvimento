@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="top-menu">
@@ -17,24 +18,22 @@
     <div class="board">
         <div class="secao">
             <p>Notificações</p>
-            <hr width="1" size="470"/>
+             <button class="adicionar">+</button>
+            <hr width="1" size="800"/>
         </div>
         <div class="secao">
             <p>Em andamento</p>
-            <hr width="1" size="470"/>
+            <hr width="1" size="800"/>
         </div>
         <div class="secao">
             <p>Resolvidos</p>
         </div>
     </div>
-
-    <section class="modal hidden">
-        <div class="flex">
+   
+    <section class="modal">
+        <div class="modal-content">
             <div class="speech">
-                <div>
-                    <p><span><img src="sino-laranja png.png"></span> DeskConnect </p>
-                </div>
-                <p>Reconhecimento de voz</p>
+                <p class="texto-modal">Reconhecimento de voz</p>
                 <textarea id="texto"></textarea>
                 <div>
                     <button id="btnGravar"><i class="fas fa-microphone"></i></button>
@@ -42,9 +41,11 @@
                 </div>
             </div>
             <script src="speech.js"></script>
-            <button class="btn-close">⨉</button>
+            <button class="close-button">⨉</button>
         </div>
+        <script src="board.js"></script>
     </section>
     <div class="overlay hidden"></div>
-    <button class="adicionar">+</button>
+    <script src="board.js"></script>
+    
 </body>
