@@ -6,18 +6,20 @@
 }
 
 img {
-    object-position: top 0px right 0px;
+    object-position: top 10px right -10px;
 }
 
 .top-menu {
     display: flex;
+    height: 70px;
 }
 
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 25px;  /* Preferred icon size */
+    font-size: 25px;
+    /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -25,20 +27,28 @@ img {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
+    vertical-align: middle;
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
+
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
+
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
 
-button { 
+#drop-menu {
+    color: #FF7A00;
+    font-size: 50px;
+    left: 50%;
+    position: absolute;
+}
+
+button {
     width: 50px;
     height: 50px;
     border: none;
@@ -73,16 +83,6 @@ p {
 }
 
 .adicionar {
-    border-radius: 50%;
-    background-color: #FF7A00;
-    color: #FFFFFF;
-    font-size: 40px;
-    border: 0px;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
     position: absolute;
     right: 20px;
     bottom: 0;
@@ -91,18 +91,6 @@ p {
 #fechar {
     right: 10px;
     top: 10px;
-}
-
-.arrow {
-    border: #FF7A00;
-
-    display: inline-block;
-    padding: 3px;
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
 }
 
 .modal {
@@ -157,3 +145,53 @@ p {
     padding: 1rem;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+
+ul li {
+    display: inline-flex;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 43px;
+    background: #ff7b00;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .5s;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #FF7A00;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #FF7A00;
+}
+
+ul li a:hover {
+    box-shadow: 0 0 5px #FF7A00;
+}

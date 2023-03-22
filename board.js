@@ -12,6 +12,11 @@ function windowOnClick(event) {
     }
 }
 
+function cleanText() {
+    texto.value = null;
+}
+
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+closeButton.addEventListener("click", cleanText);
