@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
 	<title>Login Form</title>
 	<style>
 		body {
-			background-color: #FF7A00;
-            font-family: 'Proza Libre', sans-serif;
+			background: linear-gradient(90deg, #ffa149, #FF7A00);
+			font-family: 'Proza Libre', sans-serif;
+			color: #FF7A00;
 		}
-		
+
 		.login-box {
 			width: 50%;
-            height: 70%;
+			height: 70%;
 			margin: 100px auto;
 			background-color: #FFF;
 			border-radius: 4px;
@@ -21,8 +23,9 @@
 			padding: 20px;
 			position: relative;
 		}
-		
-		input[type=text], input[type=password] {
+
+		input[type=text],
+		input[type=password] {
 			width: 100%;
 			padding: 12px 20px;
 			margin: 8px 0;
@@ -31,7 +34,7 @@
 			border-radius: 4px;
 			box-sizing: border-box;
 		}
-		
+
 		button {
 			background-color: #ff7b0091;
 			color: white;
@@ -42,48 +45,49 @@
 			cursor: pointer;
 			width: 100%;
 		}
-		
+
 		button:hover {
 			background-color: #FF7A00;
 		}
-		
+
 		.cancelbtn {
 			background-color: lightgray;
 		}
-		
+
 		.imgcontainer {
 			text-align: center;
 			margin: 24px 0 12px 0;
 		}
-		
+
 		img.logo {
 			width: 40%;
-			border-radius: 50%;
 		}
-		
+
 		.container {
 			padding: 16px;
 		}
-		
+
 		span.psw {
 			position: absolute;
 			float: right;
-			bottom: 1px; /* Adjust the top position as needed */
-			right: 5%; /* Adjust the right position as needed */
-			transform: translateY(-50%); /* Add this to vertically center the link */
+			bottom: 1px;
+			right: 5%;
+			transform: translateY(-50%);
 		}
-		
+
 		@media screen and (max-width: 300px) {
 			span.psw {
 				display: block;
 				float: none;
 			}
+
 			.cancelbtn {
 				width: 100%;
 			}
 		}
 	</style>
 </head>
+
 <body>
 	<form action="">
 		<div class="login-box">
@@ -111,4 +115,5 @@
 		</div>
 	</form>
 </body>
+
 </html>
